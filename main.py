@@ -1,8 +1,8 @@
 import algorithm
 
-LST_name_list_dir = 'E:\\GEE\\英文\\code\\大修\\LST'
-SM_name_list_dir = 'E:\\GEE\\英文\\code\\大修\\SM'
-NDVI_name_list_dir = 'E:\\GEE\\英文\\code\\大修\\NDVI'
+LST_name_list_dir = 'your LST-path'
+SM_name_list_dir = 'your SM-path'
+NDVI_name_list_dir = 'your NDVI-path'
 start_year = 2005
 end_year = 2025
 
@@ -16,6 +16,7 @@ reward_history = algorithm.train_ppo(LST_name_list_dir,SM_name_list_dir,NDVI_nam
 # 测试模型
 print("\nTesting best model...")
 algorithm.test_ppo(LST_name_list_dir,SM_name_list_dir,NDVI_name_list_dir,start_year,end_year)
+
 
 
 
